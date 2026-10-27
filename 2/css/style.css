@@ -532,3 +532,98 @@ p{text-wrap:pretty}
   .post h3{font-size:19px;line-height:1.6}
 }
 @container page (max-width:767px){ .past td.d{width:auto!important;white-space:nowrap!important} }
+
+/* =========================================================
+   v2.2 補完：30秒紹介・文字サイズ・お問い合わせフォーム
+   ========================================================= */
+/* 文字サイズ「大」：ページ全体を約1.15倍（レイアウトは自動で組み替え） */
+html.fs-l .page{zoom:1.15}
+.fs{display:flex;align-items:center;gap:2px;margin-left:18px;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:3px;white-space:nowrap}
+.fs span{padding:0 6px 0 8px;color:var(--gray);letter-spacing:.04em}
+.fs button{font:inherit;font-weight:700;border:0;background:none;border-radius:999px;padding:4px 10px;cursor:pointer;color:var(--gray);min-height:28px}
+.fs button[aria-pressed=true]{background:var(--pink);color:#fff}
+.fs button[data-fs=l]{font-size:14px;line-height:1}
+.fs--drawer{display:none}
+
+/* 30秒でわかる福田ちえ */
+.quick-sec{padding:56px 0 8px}
+.quick{max-width:880px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:34px 40px 30px;position:relative}
+.quick::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:var(--r) 0 0 var(--r);background:var(--pink)}
+.quick__en{font-family:var(--script);font-style:italic;font-size:20px;color:var(--pink);line-height:1}
+.quick__ttl{font-size:23px;letter-spacing:.12em;margin:6px 0 18px}
+.quick__list{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px}
+.quick__list li{position:relative;padding-left:22px;font-size:14.5px;line-height:1.8}
+.quick__list li::before{content:"";position:absolute;left:2px;top:.6em;width:10px;height:10px;border-radius:50%;background:var(--pink)}
+.quick__list b{display:block;font-size:15.5px}
+.quick__list span{display:block;color:var(--gray);word-break:normal}
+.quick__btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.quick__btns .btn{min-height:44px;padding:0 22px;font-size:13.5px}
+
+/* 私の思うこと：続きを読む */
+.fold-btn{display:none;text-align:center;margin-top:8px}
+.fold-btn button{font:inherit;font-weight:700;font-size:14px;color:var(--pink);background:#fff;border:1.5px solid var(--pink);border-radius:999px;padding:10px 28px;cursor:pointer;min-height:44px}
+
+/* お問い合わせフォーム */
+.contact--mini{grid-template-columns:1fr 1fr;margin-bottom:24px}
+.form{padding:34px 38px}
+.form__note{font-size:13.5px;color:var(--gray);margin-bottom:18px;word-break:normal}
+.f{display:block;margin-bottom:18px}
+.f__l{display:block;font-size:14px;font-weight:700;margin-bottom:6px}
+.f__l small{font-weight:400;color:var(--gray)}
+.req{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--pink);border-radius:4px;padding:0 6px;line-height:1.7;vertical-align:1px;margin-left:4px}
+.f input,.f select,.f textarea{width:100%;font:inherit;font-size:16px;letter-spacing:.02em;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);min-height:48px}
+.f textarea{line-height:1.8;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--pink);box-shadow:0 0 0 3px rgba(200,23,111,.12)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin:6px 0 18px;cursor:pointer}
+.agree input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--pink)}
+.agree a{color:var(--pink);text-decoration:underline}
+.form__err{background:#FFF1F4;border:1px solid #F3B7C6;color:#B0123F;border-radius:10px;padding:10px 14px;font-size:14px;margin-bottom:16px}
+.form__send{min-width:220px;border:0;cursor:pointer;font-family:inherit}
+.form__send:disabled{opacity:.6;cursor:default}
+.form__done,.form__fb{padding:36px 38px;text-align:left}
+.form__done h2,.form__fb h2{font-size:21px;color:var(--wine);margin-bottom:12px;letter-spacing:.08em}
+.form__done p,.form__fb p{word-break:normal}
+.form__done .center,.form__fb .center{margin-top:22px}
+.small{font-size:12.5px;color:var(--gray);margin-top:14px}
+.prose p,.prose li{word-break:normal}
+.prose .h3{margin-top:28px}
+.prose p+p{margin-top:10px}
+
+@container page (max-width:1100px){
+  .hd .fs span{display:none}
+}
+@container page (max-width:900px){
+  .hd .fs:not(.fs--drawer){display:none}
+  .menu-open .drawer{max-height:760px}
+  .hd .fs--drawer{display:flex;margin:12px 24px;justify-content:space-between;font-size:13px;padding:4px}
+  .fs--drawer span{display:inline;padding-left:10px}
+  .fs--drawer button{padding:6px 18px}
+}
+@container page (max-width:767px){
+  .quick-sec{padding:36px 0 0}
+  .quick{padding:24px 20px 22px 24px}
+  .quick__ttl{font-size:19px;margin-bottom:14px}
+  .quick__list{grid-template-columns:1fr;gap:12px}
+  .quick__list li{font-size:13.5px;padding-left:20px}
+  .quick__list b{font-size:14.5px}
+  .quick__btns{gap:8px}
+  .quick__btns .btn{flex:1 1 auto;padding:0 14px;font-size:13px}
+  .thought--fold{max-height:560px;overflow:hidden;position:relative}
+  .thought--fold::after{content:"";position:absolute;left:0;right:0;bottom:0;height:120px;background:linear-gradient(rgba(251,241,245,0),var(--blush))}
+  .thought--fold.open{max-height:none}
+  .thought--fold.open::after{display:none}
+  .fold-btn{display:block}
+  .contact--mini{grid-template-columns:1fr;gap:10px}
+  .form{padding:22px 18px}
+  .f2{grid-template-columns:1fr}
+  .form__done,.form__fb{padding:24px 20px}
+  .form__send{width:100%}
+}
+.brand small{white-space:nowrap}
+.gnav{gap:22px}
+.fs{margin-left:16px}
+.agree span{word-break:normal;overflow-wrap:anywhere;min-width:0}
+.agree{align-items:center}
+@container page (max-width:1280px){ .hd .brand small{display:none} }
