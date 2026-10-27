@@ -367,3 +367,168 @@ ul,ol{list-style:none}
   .bnav a[aria-current=page]{color:var(--pink);font-weight:700}
   .totop{bottom:78px}
 }
+
+/* =========================================================
+   v2.1 総点検：改行・余白・写真位置・スマホのバランス調整
+   ========================================================= */
+/* 日本語の改行を文節単位に（1〜2文字だけの行を出さない） */
+body{word-break:keep-all;overflow-wrap:anywhere;line-break:strict;font-feature-settings:"palt" 0}
+h1,h2,h3,.hero__copy,.thought .em,.quote .em{text-wrap:balance}
+p,li,dd{text-wrap:pretty}
+a[href^="mailto"],a[href^="tel"],.ext{word-break:normal;overflow-wrap:anywhere}
+
+/* 見出しの下線は見出しの直下に（リード文の前） */
+.ttl::after{content:none}
+.ttl h1::after,.ttl h2::after{content:"";display:block;width:36px;height:3px;border-radius:2px;background:var(--pink);margin:16px auto 0}
+.ttl--left h1::after,.ttl--left h2::after{margin-left:0}
+.ttl p{margin-top:18px}
+
+/* ヒーロー：頭の上に余白、肩まで自然に */
+.hero__in{min-height:620px}
+.hero__photo{width:min(100%,468px);margin-top:56px}
+.hero__name{line-height:1.15}
+.hero__copy{line-height:1.75}
+
+/* 自己紹介：写真は上揃え */
+.intro{align-items:start}
+.intro__photo{margin-top:8px}
+
+/* 関連リンク：3列カード */
+.four--3{grid-template-columns:repeat(3,1fr)}
+
+/* お問い合わせカード：アイコン → ラベル → 番号 を縦に */
+.contact a,.contact div{justify-content:center}
+.contact svg{flex:none}
+.c__txt{display:flex;flex-direction:column;align-items:center;gap:2px}
+.c__txt small{display:block;line-height:1.5}
+.c__txt b{display:block;white-space:nowrap;line-height:1.4}
+.steps .card{display:flex;flex-direction:column;align-items:center;gap:4px}
+.steps .card small{display:block;font-size:13px;color:var(--gray)}
+.steps .card b{white-space:nowrap}
+
+/* 経歴タイムライン：役職を1行ずつ */
+.tl li span{line-height:1.85}
+.tl li span b{font-weight:700;color:var(--ink)}
+.tl li.big time{color:var(--wine)}
+.tl li{padding:12px 0}
+
+/* 議会質問カード */
+.q__date .tag{display:inline-block}
+
+/* ニュース */
+.news a{line-height:1.8}
+
+@container page (max-width:1100px){
+  .four--3{grid-template-columns:1fr 1fr 1fr}
+  .hero__photo{width:min(100%,420px)}
+}
+
+@container page (max-width:767px){
+  body{letter-spacing:.04em;line-height:1.9}
+  /* ヒーロー */
+  .hero__txt{padding-top:32px}
+  .hero__name{font-size:44px;letter-spacing:.12em}
+  .hero__kana{letter-spacing:.32em}
+  .hero__copy{font-size:18.5px;line-height:1.7;margin-top:14px}
+  .hero__slogan{margin-top:14px;font-size:12.5px;letter-spacing:.1em;padding:6px 14px}
+  .hero__meta{margin-top:16px;gap:6px}
+  .hero__meta span{font-size:11.5px;padding:2px 8px}
+  .hero__photo{width:min(84%,330px);margin-top:20px}
+  /* 見出し */
+  .ttl{margin-bottom:28px}
+  .ttl h1,.ttl h2{font-size:21px;letter-spacing:.08em;line-height:1.55}
+  .ttl p{font-size:13.5px;line-height:1.8;text-align:center}
+  .phead::after{display:none}
+  .phead{padding:36px 0 30px}
+  /* 本文 */
+  .thought{font-size:15px;line-height:2.05;letter-spacing:.06em}
+  .thought p+p{margin-top:22px}
+  .thought .em{font-size:17.5px;line-height:1.85}
+  .quote{font-size:15px;line-height:2}
+  .quote .em{font-size:17px}
+  .welcome{font-size:14.5px}
+  /* 定義リストは縦積み */
+  .dl{grid-template-columns:1fr}
+  .dl dt{padding:12px 4px 0;border-bottom:0;font-size:12.5px}
+  .dl dd{padding:2px 4px 12px}
+  .words{gap:8px}
+  .word{padding:12px 6px}
+  .word b{font-size:18px;letter-spacing:.1em}
+  .word span{font-size:11px;letter-spacing:0}
+  /* 関連リンク・4つの活動 */
+  .four--3{grid-template-columns:1fr}
+  /* ニュース：日付とタグを1行に */
+  .news li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:14px 2px}
+  .news li a{flex-basis:100%;font-size:14.5px}
+  .news .tag{order:0}
+  .news time{order:-1;font-size:13px}
+  /* お問い合わせ：アイコン左、文字右 */
+  .contact a,.contact div{flex-direction:row;justify-content:flex-start;align-items:center;gap:16px;padding:16px 20px}
+  .c__txt{align-items:flex-start}
+  .c__txt small{font-size:12px}
+  .c__txt b{font-size:20px}
+  .addr{font-size:13px;line-height:1.8}
+  .steps .card{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;text-align:left;column-gap:14px;padding:18px 20px}
+  .steps .card svg{width:28px;height:28px}
+  .steps .card b{font-size:19px;margin:0}
+  .steps .card span{flex-basis:100%}
+  /* タイムライン：年を上、内容を下に */
+  .tl::before{left:6px}
+  .tl li{display:block;padding:0 0 18px 28px}
+  .tl li::before{left:0;top:6px;width:14px;height:14px}
+  .tl time{display:block;text-align:left;font-size:13.5px;line-height:1.6}
+  .tl li span{display:block;font-size:14px}
+  /* 議会質問カード */
+  .q__date b{display:block;font-size:30px;margin:0}
+  .q__date span{display:inline;font-size:12.5px}
+  .q__date .tag{margin:0 0 0 6px;vertical-align:1px}
+  .q ol>li{font-size:14px;padding-left:30px}
+  .q ol>li ul li{font-size:13px}
+  .pdf{font-size:12.5px;padding:6px 14px}
+  /* 研究会の概要：ラベル左・内容右の1列 */
+  .facts{grid-template-columns:1fr;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:4px 18px}
+  .fact{display:grid;grid-template-columns:5.5em 1fr;align-items:center;text-align:left;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;padding:14px 0}
+  .fact:last-child{border-bottom:0}
+  .fact small{font-size:12px}
+  .fact b{font-size:14.5px;margin:0}
+  .fact b br{display:none}
+  .fact b span{display:block}
+  .fact b big{font-size:36px}
+  .se{padding:20px 18px}
+  .se h3{font-size:15.5px}
+  .past{font-size:13.5px}
+  .past th{width:4em}
+  /* 後援会メッセージ */
+  .msg .card p{font-size:15px;line-height:2}
+  /* 経歴の地域活動は1列 */
+  .list[style*="columns"]{columns:1!important}
+  .pillar__hd{padding:14px 20px}
+  .pillar ul{padding:14px 20px 18px}
+  .prof h2{font-size:26px}
+  .wins li{padding:10px 2px}
+  .card{padding:22px 20px}
+}
+/* 長い文章は通常の和文改行（文節改行は見出し・短文・項目のみ） */
+.msg .card p,.quote p:not(.em),.letter p,.post p,.se p,.welcome,.four p,.dl dd,.fact b,.addr,.past td,.q .note,.pillar li,.list li,.c-normal{word-break:normal;overflow-wrap:break-word}
+body{overflow-wrap:break-word}
+p{text-wrap:pretty}
+.letter h3{word-break:normal}
+@container page (max-width:767px){
+  .letter h3{font-size:18px;line-height:1.6}
+  .letter{padding:22px 20px}
+}
+/* 数字はそろった字形で（筆記体フォントの小文字風数字を回避） */
+.q__date b,.se__no,.fact b big,.pillar__hd .no,.ttl .en{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
+.post h3{word-break:normal}
+@container page (max-width:767px){
+  /* 対談ライブ・過去の活動の表は縦積み */
+  .past,.past tbody,.past tr,.past th,.past td{display:block;width:auto}
+  .past tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  .past th,.past td{border:0;padding:0}
+  .past th{font-size:13px}
+  .past td.d{font-size:12.5px;white-space:nowrap;display:inline-block;margin-bottom:2px}
+  .past th+td.d{margin-left:8px}
+  .past td .lnk{display:inline-flex;margin-top:4px;word-break:keep-all}
+  .post h3{font-size:19px;line-height:1.6}
+}
+@container page (max-width:767px){ .past td.d{width:auto!important;white-space:nowrap!important} }
