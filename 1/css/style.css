@@ -537,3 +537,20 @@ svg.ic{width:60px;height:60px}
   .hero__area{display:block;margin-right:0;background:none;padding:0;font-size:12.5px;margin-top:10px;text-shadow:0 0 6px #fff,0 0 6px #fff}
   .hero__area b{display:block}
 }
+
+/* =========================================================
+   v2.5 高解像度写真を全面に（人物は右、文字は左のボケの上）
+   ========================================================= */
+.hero{background:#F3F1E4 url(../images/hero.jpg?v=20261027a) 72% 8%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.88) 0%,rgba(255,255,255,.72) 32%,rgba(255,255,255,.15) 56%,rgba(255,255,255,0) 66%);pointer-events:none}
+.hero__in{position:relative;z-index:1;height:clamp(520px,44vw,700px)}
+.hero__photo{display:none}
+@container page (max-width:1100px){
+  .hero{background-position:68% 8%}
+  .hero::before{background:linear-gradient(90deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.75) 42%,rgba(255,255,255,0) 70%)}
+}
+@container page (max-width:767px){
+  .hero{background:#EEF0DD url(../images/hero-sp.jpg?v=20261027a) 15% top/cover no-repeat}
+  .hero::before{background:linear-gradient(90deg,rgba(255,255,255,.82) 0%,rgba(255,255,255,.55) 42%,rgba(255,255,255,0) 62%)}
+  .hero__in{min-height:600px}
+}
