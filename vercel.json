@@ -1,7 +1,45 @@
 {
   "trailingSlash": true,
   "headers": [
-    { "source": "/:site/images/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] },
-    { "source": "/:site/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
+    {
+      "source": "/:site/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/:site/(css|js)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/profile.html",
+      "destination": "/1/profile.html",
+      "permanent": false
+    },
+    {
+      "source": "/policy.html",
+      "destination": "/1/policy.html",
+      "permanent": false
+    },
+    {
+      "source": "/results.html",
+      "destination": "/1/results.html",
+      "permanent": false
+    },
+    {
+      "source": "/chienowa.html",
+      "destination": "/1/chienowa.html",
+      "permanent": false
+    }
   ]
 }
