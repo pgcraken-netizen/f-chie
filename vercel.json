@@ -49,156 +49,191 @@
       "source": "/chienowa.html",
       "destination": "/1/chienowa.html",
       "permanent": false
-    }
-  ],
-  "rewrites": [
+    },
     {
       "source": "/2/pdf/kenkyukai-098-haifushiryo.pdf",
-      "destination": "https://www.f-chie.jp/app/download/12060523974/%E7%AC%AC98%E5%9B%9E%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A%EF%BC%8820260124%EF%BC%89%E9%85%8D%E5%B8%83%E8%B3%87%E6%96%99.pdf?t=1769839012"
+      "destination": "https://www.f-chie.jp/app/download/12060523974/%E7%AC%AC98%E5%9B%9E%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A%EF%BC%8820260124%EF%BC%89%E9%85%8D%E5%B8%83%E8%B3%87%E6%96%99.pdf?t=1769839012",
+      "permanent": false
     },
     {
       "source": "/2/pdf/kouenkai-news-2015-05.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110351374/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E5%BE%8C%E6%8F%B4%E4%BC%9ANEWS%EF%BC%882015%E5%B9%B45%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110351374/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E5%BE%8C%E6%8F%B4%E4%BC%9ANEWS%EF%BC%882015%E5%B9%B45%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/kouenkai-nyukai-moushikomisho.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10677015874/%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82%E8%AD%B0%E4%BC%9A%E8%AD%B0%E5%93%A1%20%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E5%BE%8C%E6%8F%B4%E4%BC%9A%E5%85%A5%E4%BC%9A%E7%94%B3%E8%BE%BC%E6%9B%B8.pdf"
+      "destination": "https://www.f-chie.jp/app/download/10677015874/%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82%E8%AD%B0%E4%BC%9A%E8%AD%B0%E5%93%A1%20%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E5%BE%8C%E6%8F%B4%E4%BC%9A%E5%85%A5%E4%BC%9A%E7%94%B3%E8%BE%BC%E6%9B%B8.pdf",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shimin-rengo-news-2015-06-omote.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10824398974/%E5%B8%82%E6%B0%91%E9%80%A3%E5%90%88%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9V01%28201506%29%E8%A1%A8.pdf?t=1515135846"
+      "destination": "https://www.f-chie.jp/app/download/10824398974/%E5%B8%82%E6%B0%91%E9%80%A3%E5%90%88%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9V01%28201506%29%E8%A1%A8.pdf?t=1515135846",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shimin-rengo-news-2015-06-ura.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10824398974/%E5%B8%82%E6%B0%91%E9%80%A3%E5%90%88%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9V01%28201506%29%E8%A3%8F.pdf?t=1515224303"
+      "destination": "https://www.f-chie.jp/app/download/10824398974/%E5%B8%82%E6%B0%91%E9%80%A3%E5%90%88%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9V01%28201506%29%E8%A3%8F.pdf?t=1515224303",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2010-04.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665063174/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9610.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665063174/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9610.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2010-06.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665063074/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9611.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665063074/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9611.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2011-04.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665062874/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9614.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665062874/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9614.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2011-07.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665062674/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9615.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665062674/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9615.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2012-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665062574/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9616.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665062574/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9616.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2012-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665062474/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9617.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665062474/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9617.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2012-09b.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665062374/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9618.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665062374/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9618.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2013-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/10665062274/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9619.pdf?t=1454738843"
+      "destination": "https://www.f-chie.jp/app/download/10665062274/%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%E2%84%9619.pdf?t=1454738843",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2015-08.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110349874/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882015%E5%B9%B48%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110349874/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882015%E5%B9%B48%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2016-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110349074/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882016%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110349074/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882016%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2016-07.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110348974/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882016%E5%B9%B47%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110348974/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882016%E5%B9%B47%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2016-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110347774/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882016%E5%B9%B49%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110347774/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882016%E5%B9%B49%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2017-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110347474/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882017%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110347474/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882017%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2017-06.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110346974/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882017%E5%B9%B46%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110346974/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882017%E5%B9%B46%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2017-07.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11110346374/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882017%E5%B9%B47%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11110346374/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882017%E5%B9%B47%E6%9C%88%E7%99%BA%E8%A1%8C%29.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2018-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11217133174/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882018%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672542"
+      "destination": "https://www.f-chie.jp/app/download/11217133174/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882018%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672542",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2018-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11233019374/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882018%E5%B9%B49%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672650"
+      "destination": "https://www.f-chie.jp/app/download/11233019374/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882018%E5%B9%B49%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1546672650",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2019-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11256374074/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882019%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1553003055"
+      "destination": "https://www.f-chie.jp/app/download/11256374074/%E7%A6%8F%E7%94%B0%E3%81%A1%E3%81%88%E3%81%AE%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%882019%E5%B9%B41%E6%9C%88%E7%99%BA%E8%A1%8C%EF%BC%89.pdf?t=1553003055",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2019-03.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647490174/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%88201903%EF%BC%89.pdf?t=1669025532"
+      "destination": "https://www.f-chie.jp/app/download/11647490174/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%A0%E3%82%88%E3%82%8A%EF%BC%88201903%EF%BC%89.pdf?t=1669025532",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2019-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647523274/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A201909.pdf?t=1669027858"
+      "destination": "https://www.f-chie.jp/app/download/11647523274/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A201909.pdf?t=1669027858",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2020-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647491174/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202001.pdf?t=1669032773"
+      "destination": "https://www.f-chie.jp/app/download/11647491174/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202001.pdf?t=1669032773",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2020-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647549774/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20200910.pdf?t=1669032755"
+      "destination": "https://www.f-chie.jp/app/download/11647549774/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20200910.pdf?t=1669032755",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2021-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647553474/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20210110.pdf?t=1669033182"
+      "destination": "https://www.f-chie.jp/app/download/11647553474/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20210110.pdf?t=1669033182",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2021-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647555574/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20210915.pdf?t=1669033314"
+      "destination": "https://www.f-chie.jp/app/download/11647555574/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20210915.pdf?t=1669033314",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2022-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647562874/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20220110.pdf?t=1669033876"
+      "destination": "https://www.f-chie.jp/app/download/11647562874/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20220110.pdf?t=1669033876",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2022-03.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11906997574/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202203103.pdf?t=1714544371"
+      "destination": "https://www.f-chie.jp/app/download/11906997574/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202203103.pdf?t=1714544371",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2022-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11906941474/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20220910.pdf?t=1714537079"
+      "destination": "https://www.f-chie.jp/app/download/11906941474/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20220910.pdf?t=1714537079",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2023-02.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11906943974/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202302.pdf?t=1714539024"
+      "destination": "https://www.f-chie.jp/app/download/11906943974/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202302.pdf?t=1714539024",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2023-03.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11906990374/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202303.pdf?t=1714543385"
+      "destination": "https://www.f-chie.jp/app/download/11906990374/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202303.pdf?t=1714543385",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2023-09.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647498174/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202309.pdf?t=1714543794"
+      "destination": "https://www.f-chie.jp/app/download/11647498174/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202309.pdf?t=1714543794",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2023-09b.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11647565874/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20230927.pdf?t=1742142211"
+      "destination": "https://www.f-chie.jp/app/download/11647565874/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A20230927.pdf?t=1742142211",
+      "permanent": false
     },
     {
       "source": "/2/pdf/shiseidayori-2024-01.pdf",
-      "destination": "https://www.f-chie.jp/app/download/11907002374/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202401.pdf?t=1714546513"
+      "destination": "https://www.f-chie.jp/app/download/11907002374/%E3%81%A1%E3%81%88%E5%B8%82%E6%94%BF%E3%81%9F%E3%82%99%E3%82%88%E3%82%8A202401.pdf?t=1714546513",
+      "permanent": false
     }
   ]
 }
