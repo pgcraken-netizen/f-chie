@@ -276,20 +276,20 @@ address{font-style:normal}
   .menu-btn[aria-expanded=true]::after{opacity:0}
 
   /* 01 FV */
-  .fv{height:104vw;min-height:0;max-height:none;display:block;background:#EEF1D8}
+  .fv{height:88vw;min-height:0;max-height:none;display:block;background:#EEF1D8}
   .fv__bg{position:static}
-  .fv__bg img{object-position:100% 0;transform-origin:80% 20%;filter:saturate(.95) brightness(1.04)!important;animation:zoom 16s var(--ease) both!important;transform:none}
+  .fv__bg img{object-position:100% 30%;transform-origin:80% 20%;filter:saturate(.95) brightness(1.04)!important;animation:zoom 16s var(--ease) both!important;transform:none}
   .fv__photo{display:none}
   .fv::before{height:auto;inset:0;background:linear-gradient(100deg,rgba(255,252,240,.6) 0%,rgba(255,252,240,.3) 40%,rgba(255,252,240,0) 60%)}
-  .fv__inner{position:absolute;inset:0;margin:0;height:auto;padding:24vw 0 0 5.6vw}
-  .fv__copy{font-size:5.4vw;line-height:1.38;transform:rotate(-8deg);-webkit-text-stroke:.5px currentColor}
-  .fv__sub{font-size:3.5vw;margin-top:3.4vw;transform:rotate(-8deg);margin-left:.6em}
-  .scroll{margin-top:6vw;font-size:2.2vw;gap:1.6vw}
+  .fv__inner{position:absolute;inset:0;margin:0;height:auto;padding:21vw 0 0 5vw}
+  .fv__copy{font-size:5.1vw;line-height:1.38;transform:rotate(-8deg);-webkit-text-stroke:.5px currentColor}
+  .fv__sub{font-size:3.3vw;margin-top:2.6vw;transform:rotate(-8deg);margin-left:.6em}
+  .scroll{margin-top:4vw;font-size:2.2vw;gap:1.6vw}
   .scroll i{height:7vw}
   .deco--fv-flower{display:block;left:auto;right:-6vw;bottom:-5vw;width:34vw;transform:rotate(180deg)}
-  .deco--fv-l1{top:31vw;left:1.4vw;width:5vw}
+  .deco--fv-l1{top:27vw;left:1.4vw;width:5vw}
   .deco--fv-l2{display:none}
-  .deco--fv-p1{display:block;left:2vw;bottom:auto;top:52vw;width:5vw;right:auto}
+  .deco--fv-p1{display:block;left:2vw;bottom:auto;top:46vw;width:5vw;right:auto}
 
   /* bands */
   .band{margin-top:1.2vw}
@@ -304,7 +304,7 @@ address{font-style:normal}
   .about{display:block;min-height:96vw;background:linear-gradient(90deg,#FCF5EE 0%,#FCF5EE 50%,#F3F2E2 100%)}
   .about__ph{display:none}
   .about__me{display:block;position:absolute;top:0;right:0;bottom:0;width:52%;margin:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 26%);mask-image:linear-gradient(90deg,transparent 0%,#000 26%)}
-  .about__me img{width:100%!important;height:100%!important;object-fit:cover;object-position:50% 20%}
+  .about__me img{width:100%!important;height:100%!important;object-fit:cover;object-position:40% 0}
   .about__sign{position:absolute;top:7vw;right:4vw;display:flex;flex-direction:column;align-items:flex-end;color:var(--pink);line-height:1;text-shadow:0 0 10px rgba(255,255,255,.8)}
   .about__sign .logo__ja{font-family:var(--hand);font-size:6.4vw;transform:rotate(-8deg);-webkit-text-stroke:.4px currentColor}
   .about__sign .logo__en{font-family:var(--en);font-size:1.7vw;margin:1vw 3vw 0 0;color:var(--ink-2)}
