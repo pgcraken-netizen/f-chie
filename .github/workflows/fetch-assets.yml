@@ -1,0 +1,33 @@
+# tools/fetch-list.txt に「保存先パス URL」を1行ずつ書いて push すると、
+# GitHub のサーバーがファイルをダウンロードしてこのリポジトリに保存します。
+name: fetch-assets
+on:
+  push:
+    branches: [main]
+    paths: ['tools/fetch-list.txt']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download files
+        run: |
+          set -u
+          ok=0; ng=0
+          while read -r dest url; do
+            [ -z "${dest:-}" ] && continue
+            case "$dest" in \#*) continue;; esac
+            mkdir -p "$(dirname "$dest")"
+            if curl -fsSL --retry 3 -A "Mozilla/5.0" -o "$dest.tmp" "$url"; then mv "$dest.tmp" "$dest"; echo "OK $dest $(stat -c%s "$dest")"; ok=$((ok+1)); else rm -f "$dest.tmp"; echo "NG $dest"; ng=$((ng+1)); fi
+          done < tools/fetch-list.txt
+          { echo "ok=$ok ng=$ng"; date -u; } > tools/fetch-result.txt
+          cat tools/fetch-result.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "fetch-assets: ダウンロードしたファイルを追加"
+          git push
