@@ -304,7 +304,7 @@ address{font-style:normal}
   .about{display:block;min-height:96vw;background:linear-gradient(90deg,#FCF5EE 0%,#FCF5EE 50%,#F3F2E2 100%)}
   .about__ph{display:none}
   .about__me{display:block;position:absolute;top:0;right:0;bottom:0;width:52%;margin:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 26%);mask-image:linear-gradient(90deg,transparent 0%,#000 26%)}
-  .about__me img{width:100%!important;height:100%!important;object-fit:cover;object-position:40% 0}
+  .about__me img{width:100%!important;height:100%!important;object-fit:cover;object-position:55% 30%}
   .about__sign{position:absolute;top:7vw;right:4vw;display:flex;flex-direction:column;align-items:flex-end;color:var(--pink);line-height:1;text-shadow:0 0 10px rgba(255,255,255,.8)}
   .about__sign .logo__ja{font-family:var(--hand);font-size:6.4vw;transform:rotate(-8deg);-webkit-text-stroke:.4px currentColor}
   .about__sign .logo__en{font-family:var(--en);font-size:1.7vw;margin:1vw 3vw 0 0;color:var(--ink-2)}
