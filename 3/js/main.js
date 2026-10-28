@@ -13,6 +13,10 @@
   if (fv) { onScroll(); addEventListener('scroll', onScroll, { passive: true }); }
   else hd.classList.add('is-solid');
 
+  // back to top
+  const toTop = d.querySelector('.totop');
+  if (toTop) { const t = () => toTop.classList.toggle('is-show', window.scrollY > 600); t(); addEventListener('scroll', t, { passive: true }); }
+
   // drawer menu
   const btn = d.querySelector('.menu-btn');
   const drawer = d.getElementById('drawer');
