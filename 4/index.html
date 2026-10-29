@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Yomogi&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -21,7 +21,7 @@
 
 <header class="hd" id="top">
   <a class="logo" href="./" aria-label="福田ちえ ホーム">
-    <img class="logo__mark" src="images/mark.svg" alt="" width="30" height="30">
+    <img class="logo__mark" src="images/mark.webp" alt="" width="30" height="30">
     <span class="logo__ja">福田ちえ</span>
     <span class="logo__role">宇都宮市議会議員</span>
   </a>
@@ -55,9 +55,10 @@
 
   <!-- 01 First view -->
   <section class="fv" aria-labelledby="fv-h">
-    <div class="fv__bg" aria-hidden="true"><img src="images/fv-city.jpg" srcset="images/fv-city-sm.jpg 960w, images/fv-city.jpg 1920w" sizes="100vw" alt="" width="1920" height="1080"></div>
+    <picture class="fv__bg" aria-hidden="true"><source media="(max-width:767px)" srcset="images/wc-city.jpg"><img src="images/fv-city.jpg" srcset="images/fv-city-sm.jpg 960w, images/fv-city.jpg 1920w" sizes="100vw" alt="" width="1920" height="1080"></picture>
     <img class="fv__deco fv__deco--l" src="images/flower-l.webp" alt="" aria-hidden="true">
     <img class="fv__deco fv__deco--r" src="images/leaf-r.webp" alt="" aria-hidden="true">
+    <img class="fv__deco fv__deco--sp" src="images/leaf-r.webp" alt="" aria-hidden="true">
     <div class="fv__inner">
       <div class="fv__text">
         <p class="fv__tag hand"><span>宇都宮の未来を、<br>一緒につくろう</span></p>
@@ -69,7 +70,7 @@
         </div>
       </div>
       <figure class="fv__photo">
-        <img src="/2/images/portrait.webp" alt="正面を向いて微笑む福田ちえ" width="860" height="1121" fetchpriority="high">
+        <img src="images/chie-main.webp" alt="正面を向いて微笑む福田ちえ" width="1100" height="1242" fetchpriority="high">
       </figure>
       <p class="fv__note hand" aria-hidden="true">あなたの声が<br>わたしの原動力です</p>
     </div>
@@ -237,7 +238,7 @@
 
 <footer class="ft">
   <div class="ft__in">
-    <a class="logo" href="./"><img class="logo__mark" src="images/mark.svg" alt="" width="30" height="30"><span class="logo__ja">福田ちえ</span><span class="logo__role">宇都宮市議会議員</span></a>
+    <a class="logo" href="./"><img class="logo__mark" src="images/mark.webp" alt="" width="30" height="30"><span class="logo__ja">福田ちえ</span><span class="logo__role">宇都宮市議会議員</span></a>
     <nav class="ft__nav" aria-label="フッターメニュー">
       <a href="./">ホーム</a><a href="/2/profile.html">福田ちえについて</a><a href="/2/policy.html">政策・取り組み</a><a href="#torikumi">活動報告</a><a href="/2/gikai.html">議会での活動</a><a href="/2/news.html">お知らせ</a>
     </nav>
