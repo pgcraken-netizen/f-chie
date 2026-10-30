@@ -4,3 +4,9 @@
 
 .mobile-break{display:none}@media(max-width:760px){.mobile-break{display:initial}.hero-sign{display:none}}
 .hero h1 span{display:inline}.mobile-break{display:initial}
+/* Keep the full portrait visible; place the caption outside the photograph. */
+.message-photo{width:100%;max-width:390px;justify-self:center;padding:0;margin:0 auto}
+.message-photo:before{display:none}
+.message-photo img{width:100%;height:auto;object-fit:contain;border-radius:4px}
+.message-photo>p{position:static;margin:0;padding:24px 12px 0;background:transparent;text-align:center;font-size:24px;line-height:1.7}
+@media(max-width:760px){.message-photo{width:100%;max-width:320px;padding:0}.message-photo img{height:auto;border-radius:4px}.message-photo>p{position:static;padding:20px 0 0;font-size:22px}}
