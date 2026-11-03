@@ -1,0 +1,24 @@
+name: run-job
+on:
+  push:
+    branches: [main]
+    paths: ['tools/job.sh']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run job
+        run: |
+          rm -rf tools/job-out; mkdir -p tools/job-out
+          bash tools/job.sh > tools/job-out/log.txt 2>&1 || true
+          tail -5 tools/job-out/log.txt
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "run-job: 結果を追加"
+          git push
