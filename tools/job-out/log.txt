@@ -1,3 +1,10 @@
+v-work 588290
+v-safety 763313
+v-school 997087
+v-life2 596627
+v-life 607306
+alt-gyoza 767969
+a-gikai 874764
+a-support 701414
 a-kenkyukai 962036
 alt-kama 1032603
-10
