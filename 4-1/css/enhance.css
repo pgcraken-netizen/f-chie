@@ -154,30 +154,54 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
 .ft__sns .ft__ig{display:block;width:24px;height:24px;color:#D6307A}
 .ft__sns .ft__ig svg{width:100%;height:100%;fill:currentColor}
 
-/* ---------- スマホのヒーロー：顔を画面中央に ---------- */
+/* ---------- スマホのヒーロー：本人写真（顔を中央）＋重なるコピーカード ---------- */
 .slide__sp{display:none}
 @media (max-width:767px){
-  .fv__slides{height:96vw;overflow:hidden}
-  .slide .fv__bg{height:100%}
-  .slide::after{content:"";position:absolute;top:auto;left:0;right:0;bottom:0;height:42%;z-index:3;background:linear-gradient(180deg,rgba(255,253,248,0) 0%,var(--ivory) 92%)}
-  .slide:not(:first-child)::after{top:auto;background:linear-gradient(180deg,rgba(255,253,248,0) 0%,var(--ivory) 92%)}
+  .fv{padding-bottom:0;background:var(--ivory)}
   .fv::before{display:none}
-  .slide .fv__bg img,.slide__bg img{object-position:50% 40%}
-  .slide:nth-child(3) .slide__bg img{object-position:50% 10%}
-  /* 顔の中心（鼻の位置）を画面の中央に合わせる */
-  .slide .fv__photo{position:absolute;z-index:2;top:1vw;left:50%;right:auto;bottom:auto;width:62vw;height:auto;transform:translateX(-43%);-webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 96%);mask-image:linear-gradient(180deg,#000 70%,transparent 96%)}
-  .slide .fv__photo img{width:100%;height:auto}
-  .slide__sp{display:block;position:absolute;z-index:2;left:50%;height:auto;max-width:none;-webkit-mask-image:linear-gradient(180deg,#000 66%,transparent 94%);mask-image:linear-gradient(180deg,#000 66%,transparent 94%);filter:drop-shadow(0 8px 20px rgba(41,38,41,.12))}
-  .slide__sp--pink{top:8vw;width:41vw;transform:translateX(-53%)}
-  .slide__sp--portrait{top:2vw;width:54vw;transform:translateX(-49%)}
-  .slide__note{top:auto;bottom:calc(42% - 6px);right:8px;z-index:4}
-  /* コピーは写真の下に中央揃えで */
-  .fv__text{padding:80vw 5vw 0;min-height:0;align-items:center;text-align:center}
-  .fv__h{transform:rotate(-3deg);transform-origin:center;text-align:center;font-size:min(6.4vw,27px);white-space:nowrap}
-  .fv__h .ln:nth-child(2),.fv__h .ln:nth-child(3){padding-left:0}
-  .fv__sub{align-self:center;transform:rotate(-3deg);padding:0 .4em 4px;margin-top:3vw}
-  .fv__card{margin-top:6vw;padding:0 1vw;width:100%}
-  .fv__lead{margin:0 auto;width:92%;text-align:left}
-  .fv__deco--l{bottom:auto;top:62vw;left:-10vw;width:30vw}
-  .fv__deco--sp{bottom:auto;top:58vw;right:-8vw;width:26vw}
+  .fv__slides{height:112vw;overflow:hidden;background:#F2EEEF}
+  .slide .fv__bg{height:100%}
+  .slide .fv__photo,.slide__fig,.slide__sp,.slide__note,.fv__note{display:none!important}
+  .slide::after,.slide:not(:first-child)::after{content:"";position:absolute;top:auto;left:0;right:0;bottom:0;height:30%;z-index:3;background:linear-gradient(180deg,rgba(60,20,40,0) 0%,rgba(60,20,40,.18) 100%)}
+  .slide .fv__bg img,.slide__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;filter:none!important;transform:none!important}
+  .slide.is-active .slide__bg img,.slide.is-active .fv__bg img{animation:spZoom 7s ease-out both}
+  @keyframes spZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+
+  /* コピーは写真に重なる白いカードに */
+  .fv__inner{position:relative;z-index:5}
+  .fv__text{position:relative;padding:0;margin:0;min-height:0;display:block;text-align:center}
+  .fv__text::before{content:"";display:block;height:98vw}
+  .fv__text>*{position:relative}
+  .fv__card,.fv__h,.fv__sub{z-index:2}
+  .fv__text{--card:#FFFDF8}
+  .fv__h{margin:0 4vw;padding:8vw 4vw 0;background:var(--card);border-radius:22px 22px 0 0;font-size:min(6.6vw,28px);line-height:1.55;letter-spacing:.08em;color:var(--rose);text-shadow:none;transform:none;white-space:nowrap;box-shadow:0 -10px 24px rgba(60,20,40,.08)}
+  .fv__h .ln{padding-left:0!important}
+  .fv__sub{display:block;margin:0 4vw;padding:3.2vw 0 0;background:var(--card);transform:none;font-size:min(3.6vw,15px);color:var(--green);letter-spacing:.12em;text-shadow:none}
+  .fv__sub::after{left:30%;right:30%;bottom:-4px;height:8px;border-bottom-color:var(--rose);opacity:.6}
+  .fv__sub br{display:none}
+  .fv__card{margin:0 4vw;padding:5vw 5vw 6vw;background:var(--card);border-radius:0 0 22px 22px;width:auto}
+  .fv__lead{width:auto;margin:0;padding:0;background:none;box-shadow:none;border-radius:0;font-size:min(3.4vw,14px);line-height:2;text-align:center;color:var(--ink)}
+  .fv__card .btn{margin-top:5vw}
+  .fv__deco--l{display:block;top:calc(98vw + 52vw);bottom:auto;left:-6vw;width:24vw;z-index:6}
+  .fv__deco--sp{display:block;top:calc(98vw - 10vw);bottom:auto;right:-2vw;width:22vw;z-index:6;transform:rotate(160deg)}
+  .fv__deco--r{display:none}
+  /* 写真上のスライド操作 */
+  .fv__ctrl{position:absolute;z-index:7;left:auto;right:4vw;top:calc(98vw - 50px);transform:none;margin:0;padding:3px 4px;gap:4px;background:rgba(255,255,255,.82)}
+  .fv__ctrl .fv__btn{width:28px;height:28px}
+  .fv__ctrl .fv__dots button{width:7px;height:7px}
+  .fv__ctrl .fv__dots button[aria-selected=true]{width:18px}
+}
+
+/* ---------- スマホ全体の見栄え調整 ---------- */
+@media (max-width:767px){
+  .h2{letter-spacing:.05em}
+  .value__h{letter-spacing:.05em}
+  .tag-hand{letter-spacing:.04em}
+  .vcard__body{grid-template-columns:22px 1fr;column-gap:6px;padding:12px 10px 12px 12px}
+  .vcard__ic{width:22px;height:22px}
+  .vcard b{font-size:min(3.4vw,13.5px);letter-spacing:0;white-space:nowrap}
+  .vcard small{font-size:11px;letter-spacing:0}
+  .teaser .h2,.torikumi .h2{letter-spacing:.04em}
+  .banner__h,.profile__hand,.teaser__hand{letter-spacing:.03em}
+  .mv__cap b{font-size:13px}
 }
