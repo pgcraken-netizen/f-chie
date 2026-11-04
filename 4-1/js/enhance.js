@@ -42,16 +42,21 @@
   const loader = d.getElementById('loader');
   const hideLoader = () => {
     if (!html.classList.contains('is-loading') || !loader || loader.classList.contains('is-out')) return;
+    html.classList.add('is-leaving');
     loader.classList.add('is-out');
     try { sessionStorage.setItem('chie-loaded', '1'); } catch (e) {}
-    setTimeout(() => html.classList.remove('is-loading'), 800);
+    setTimeout(() => { html.classList.remove('is-loading', 'is-leaving'); }, 1300);
   };
   if (html.classList.contains('is-loading')) {
-    const start = window.__ldStart || Date.now();
-    const MIN = 1100, MAX = 2600;
-    const done = () => setTimeout(hideLoader, Math.max(0, MIN - (Date.now() - start)));
-    if (d.readyState === 'complete') done(); else addEventListener('load', done, { once: true });
-    setTimeout(hideLoader, MAX);           // 読み込みが遅くても待たせすぎない
+    // 画像の表示 → 名前の打ち出しが終わる → 少し見せてから退場
+    let loaded = d.readyState === 'complete', typed = false;
+    const go = () => { if (loaded && typed) setTimeout(hideLoader, 500); };
+    const nameCover = d.querySelector('.loader__cover--name');
+    if (nameCover) nameCover.addEventListener('animationend', () => { typed = true; go(); }, { once: true });
+    else typed = true;
+    if (!loaded) addEventListener('load', () => { loaded = true; go(); }, { once: true });
+    go();
+    setTimeout(hideLoader, 4500);          // 読み込みが遅くても待たせすぎない
     loader && loader.addEventListener('click', hideLoader);
   }
 

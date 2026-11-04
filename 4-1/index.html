@@ -15,7 +15,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Yomogi&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=3">
-<link rel="stylesheet" href="css/enhance.css?v=2">
+<link rel="preload" as="image" href="images/loading-still.webp">
+<link rel="stylesheet" href="css/enhance.css?v=4">
 <script>
 (function(){var d=document.documentElement;d.classList.add('js');
 try{var seen=sessionStorage.getItem('chie-loaded');var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -24,24 +25,11 @@ if(!seen&&!rm){d.classList.add('is-loading');window.__ldStart=Date.now();}}catch
 </head>
 <body>
 <div class="loader" id="loader" aria-hidden="true">
-  <div class="loader__sky"></div>
-  <img class="loader__city" src="images/ld-city.jpg" alt="" width="1400" height="861">
-  <img class="loader__sakura" src="images/deco-corner.webp" alt="">
-  <img class="loader__chie" src="images/chie-pink.webp" alt="" width="820" height="1400">
-  <div class="loader__brand">
-    <svg class="loader__swoosh" viewBox="0 0 400 120" aria-hidden="true"><path d="M30 92C10 70 60 46 150 34s210-16 220 6c8 18-60 34-150 40" fill="none" stroke="#E46FA2" stroke-width="2.4" stroke-linecap="round"/></svg>
-    <img class="loader__mark" src="images/mark.webp" alt="">
-    <p class="loader__name">福田ちえ</p>
-    <p class="loader__en">FUKUDA CHIE</p>
-    <p class="loader__catch">もっと、やさしい宇都宮を。</p>
+  <div class="loader__stage">
+    <img class="loader__still" src="images/loading-still.webp" alt="" width="941" height="1672" fetchpriority="high" onload="document.getElementById('loader').classList.add('is-ready')" onerror="document.getElementById('loader').classList.add('is-ready')">
+    <span class="loader__cover loader__cover--kana"></span>
+    <span class="loader__cover loader__cover--name"></span>
   </div>
-  <div class="loader__wave">
-    <svg viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70C240 10 480 10 720 60s480 70 720 10V220H0z" fill="#FFFDF8" opacity=".92"/><path d="M0 110c260-50 520-40 760 0s440 40 680-10V220H0z" fill="#FFFDF8"/></svg>
-    <span class="loader__ring"></span>
-    <span class="loader__txt">LOADING<span>...</span></span>
-    <img class="loader__town" src="images/town.webp" alt="">
-  </div>
-  <img class="loader__petal p1" src="images/petal-1.webp" alt=""><img class="loader__petal p2" src="images/petal-3.webp" alt=""><img class="loader__petal p3" src="images/petal-5.webp" alt=""><img class="loader__petal p4" src="images/petal-7.webp" alt="">
 </div>
 
 <a class="skip" href="#main">本文へスキップ</a>
@@ -93,11 +81,13 @@ if(!seen&&!rm){d.classList.add('is-loading');window.__ldStart=Date.now();}}catch
         <p class="fv__note hand" aria-hidden="true">あなたの声が<br>わたしの原動力です</p>
       </div>
       <div class="slide" role="group" aria-roledescription="スライド" aria-label="2 / 3">
-        <picture class="slide__bg"><source media="(max-width:767px)" srcset="images/s2-chie-sp.jpg"><img src="images/s2-chie.jpg" alt="新緑の並木道で微笑む福田ちえ" width="1920" height="1440" loading="lazy"></picture>
+        <picture class="slide__bg"><source media="(max-width:767px)" srcset="images/s2-bg-sp.jpg"><img src="images/s2-chie.jpg" alt="新緑の並木道で微笑む福田ちえ" width="1920" height="1440" loading="lazy"></picture>
         <img class="slide__fig" src="images/s2-chie.jpg" alt="" aria-hidden="true" width="1920" height="1440" loading="lazy">
+        <img class="slide__sp slide__sp--pink" src="images/chie-pink.webp" alt="" aria-hidden="true" width="820" height="1400" loading="lazy">
       </div>
       <div class="slide" role="group" aria-roledescription="スライド" aria-label="3 / 3">
         <picture class="slide__bg"><source media="(max-width:767px)" srcset="images/s3-sakura-sp.jpg"><img src="images/s3-sakura.jpg" alt="桜の咲く八幡山公園と宇都宮タワー" width="1920" height="1280" loading="lazy"></picture>
+        <img class="slide__sp slide__sp--portrait" src="images/chie-portrait.webp" alt="" aria-hidden="true" width="847" height="1083" loading="lazy">
         <span class="img-note slide__note">八幡山公園と宇都宮タワー</span>
       </div>
     </div>
@@ -396,6 +386,6 @@ if(!seen&&!rm){d.classList.add('is-loading');window.__ldStart=Date.now();}}catch
 </nav>
 
 <script src="js/main.js?v=1" defer></script>
-<script src="js/enhance.js?v=2" defer></script>
+<script src="js/enhance.js?v=4" defer></script>
 </body>
 </html>
