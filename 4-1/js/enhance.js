@@ -10,15 +10,23 @@
       name: 'Facebook',
       note: '日々の活動やその思いを発信しています',
       url: 'https://www.facebook.com/share/1K62X7trj1/?mibextid=wwXIfr',
+      cls: 'fb',
       icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-1.6 19.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 12 2z"/></svg>'
+    },
+    {
+      name: 'Instagram',
+      note: '@fukudachie316',
+      url: 'https://www.instagram.com/fukudachie316/',
+      cls: 'ig',
+      icon: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17 5.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/><path d="M12 2.5c-2.6 0-2.9 0-3.9.1-1 0-1.7.2-2.3.5-.6.2-1.2.6-1.7 1.1S3.3 5.2 3.1 5.8c-.3.6-.4 1.3-.5 2.3 0 1-.1 1.3-.1 3.9s0 2.9.1 3.9c0 1 .2 1.7.5 2.3.2.6.6 1.2 1.1 1.7s1.1.9 1.7 1.1c.6.3 1.3.4 2.3.5 1 0 1.3.1 3.9.1s2.9 0 3.9-.1c1 0 1.7-.2 2.3-.5.6-.2 1.2-.6 1.7-1.1s.9-1.1 1.1-1.7c.3-.6.4-1.3.5-2.3 0-1 .1-1.3.1-3.9s0-2.9-.1-3.9c0-1-.2-1.7-.5-2.3-.2-.6-.6-1.2-1.1-1.7s-1.1-.9-1.7-1.1c-.6-.3-1.3-.4-2.3-.5-1 0-1.3-.1-3.9-.1zm0 1.7c2.5 0 2.8 0 3.8.1.9 0 1.4.2 1.8.3.4.2.7.4 1.1.7.3.3.6.7.7 1.1.1.3.3.8.3 1.8 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c0 .9-.2 1.4-.3 1.8-.2.4-.4.7-.7 1.1-.3.3-.7.6-1.1.7-.3.1-.8.3-1.8.3-1 0-1.3.1-3.8.1s-2.8 0-3.8-.1c-.9 0-1.4-.2-1.8-.3-.4-.2-.7-.4-1.1-.7-.3-.3-.6-.7-.7-1.1-.1-.3-.3-.8-.3-1.8 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8c0-.9.2-1.4.3-1.8.2-.4.4-.7.7-1.1.3-.3.7-.6 1.1-.7.3-.1.8-.3 1.8-.3 1 0 1.3-.1 3.8-.1z"/></svg>'
     }
-    // 例：{ name:'Instagram', note:'…', url:'https://www.instagram.com/…', icon:'<svg …>' }
+    // 例：{ name:'YouTube', note:'…', url:'https://www.youtube.com/…', icon:'<svg …>' }
   ];
   d.querySelectorAll('[data-sns-list]').forEach((ul) => {
     const isRail = !!ul.closest('.snsrail');
     ul.innerHTML = SNS.map((s) => isRail
-      ? `<li><a href="${s.url}" target="_blank" rel="noopener" aria-label="${s.name}（新しいタブで開きます）">${s.icon}<span class="tip">${s.name}</span></a></li>`
-      : `<li><a href="${s.url}" target="_blank" rel="noopener">${s.icon}<span><b>${s.name}（公式）</b><small>${s.note}</small></span></a></li>`
+      ? `<li><a class="sns--${s.cls}" href="${s.url}" target="_blank" rel="noopener" aria-label="${s.name}（新しいタブで開きます）">${s.icon}<span class="tip">${s.name}</span></a></li>`
+      : `<li><a class="sns--${s.cls}" href="${s.url}" target="_blank" rel="noopener">${s.icon}<span><b>${s.name}（公式）</b><small>${s.note}</small></span></a></li>`
     ).join('');
   });
 
