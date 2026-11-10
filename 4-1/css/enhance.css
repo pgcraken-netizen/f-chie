@@ -222,3 +222,43 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
   .fv__deco--l{top:66vw;left:-6vw;width:32vw;transform:none}
   .fv__deco--sp{top:6vw;right:-7vw;width:28vw;transform:rotate(200deg)}
 }
+
+/* ---------- 統一感の調整（2026-11-10） ---------- */
+/* PCヒーロー：3枚とも「実写真＋左にコピー」の同じ構図に */
+@media (min-width:768px){
+.slide:first-child::after,.slide:not(:first-child)::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,253,248,.96) 0%,rgba(255,253,248,.86) 26%,rgba(255,253,248,0) 50%)}
+.slide__bg img{object-position:100% 30%}
+.slide:nth-child(2) .slide__bg img{object-position:100% 20%;filter:none;transform:none}
+.slide:nth-child(3) .slide__bg img{object-position:100% 40%}
+}
+.slide__fig{display:none}
+.fv::before{display:none}
+.slide__note{z-index:3}
+.fv__h{color:var(--ink)}
+/* セクションの順番はPC・スマホとも同じ（ナビの並びと一致） */
+@media (max-width:767px){
+  main>*{order:0!important}
+  .fv{order:-1!important}
+}
+/* フッターの街並みは文字に重ねない */
+@media (min-width:768px){
+  .ft{padding-bottom:150px}
+  .ft__town{width:min(420px,32vw);right:2vw;bottom:0;opacity:.85}
+  .ft__copy,.ft__note,.credits{position:relative;z-index:2;max-width:calc(100% - min(420px,32vw) - 40px);margin-left:auto;margin-right:auto}
+}
+.drawer__sns{display:flex;gap:18px;justify-content:center;margin-top:18px;font-size:14px!important;border:0!important}
+.drawer__sns a{border:0!important;padding:6px 4px!important;font-size:14px!important;color:var(--rose)}
+/* 動画は1本を大きく、説明を横に */
+.mv__info{align-self:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 26px}
+.mv__info-h{font-family:var(--maru);font-weight:700;font-size:14px;color:var(--rose);letter-spacing:.1em}
+.mv__info ol{margin:10px 0 0;padding-left:1.4em;font-size:13.5px;line-height:2}
+.mv__info-n{font-size:11.5px;color:var(--gray);margin-top:12px;line-height:1.7}
+@media (min-width:768px){
+  .mv__list{grid-template-columns:260px minmax(0,560px);gap:32px}
+}
+@media (max-width:767px){
+  .mv__list{display:block;padding:0 16px}
+  .mv__list>li:first-child{width:62%;margin:0 auto}
+  .mv__info{margin-top:16px;padding:16px 18px}
+  .mv__info ol{font-size:13px}
+}

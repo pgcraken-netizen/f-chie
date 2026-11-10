@@ -109,20 +109,18 @@
 
   /* ---------- 現在のセクションをナビに表示 ---------- */
   const navLinks = [...d.querySelectorAll('.gnav a[href^="#"]')];
-  const targets = navLinks.map((a) => d.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
-  if ('IntersectionObserver' in window && targets.length) {
-    const spy = new IntersectionObserver((es) => {
-      es.forEach((e) => {
-        if (!e.isIntersecting) return;
-        navLinks.forEach((a) => {
-          const on = a.getAttribute('href') === '#' + e.target.id;
-          a.classList.toggle('is-current', on);
-          if (on) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
-        });
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    targets.forEach((t) => spy.observe(t));
-  }
+  const pairs = navLinks.map((a) => [a, a.getAttribute('href') === '#top' ? null : d.getElementById(a.getAttribute('href').slice(1))]);
+  const spy = () => {
+    const y = innerHeight * 0.4;
+    let cur = navLinks[0];
+    pairs.forEach(([a, t]) => { if (t && t.getBoundingClientRect().top <= y) cur = a; });
+    navLinks.forEach((a) => {
+      const on = a === cur;
+      a.classList.toggle('is-current', on);
+      if (on) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
+    });
+  };
+  spy(); addEventListener('scroll', spy, { passive: true }); addEventListener('resize', spy);
 
   /* ---------- セクションのフェードイン ---------- */
   const secs = d.querySelectorAll('.sec__head, .party__grid, .mv__list');
