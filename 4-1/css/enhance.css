@@ -262,3 +262,7 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
   .mv__info{margin-top:16px;padding:16px 18px}
   .mv__info ol{font-size:13px}
 }
+
+/* プロフィール写真（正面・中央） */
+.profile__ph img{object-position:50% 20%}
+@media (max-width:767px){.profile__ph img{object-position:50% 4%}}
