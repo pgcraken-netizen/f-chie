@@ -270,3 +270,7 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
 /* ヒーロー5枚：画像側で構図をそろえたので位置指定は共通（2026-11-17） */
 @media (min-width:768px){.slide .slide__bg img,.slide:nth-child(n) .slide__bg img{object-position:100% 30%;filter:none;transform:none}}
 @media (max-width:767px){.slide .slide__bg img,.slide:nth-child(n) .slide__bg img{object-position:50% 30%;filter:none}}
+
+/* 議会での質問写真：本人が見えるよう右寄せ */
+.tk__ph img.tk__img--speech{object-position:62% 30%}
+@media (max-width:767px){.tk__ph img.tk__img--speech{object-position:68% 20%}}
