@@ -266,3 +266,7 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
 /* プロフィール写真（正面・中央） */
 .profile__ph img{object-position:50% 20%}
 @media (max-width:767px){.profile__ph img{object-position:50% 4%}}
+
+/* ヒーロー5枚：画像側で構図をそろえたので位置指定は共通（2026-11-17） */
+@media (min-width:768px){.slide .slide__bg img,.slide:nth-child(n) .slide__bg img{object-position:100% 30%;filter:none;transform:none}}
+@media (max-width:767px){.slide .slide__bg img,.slide:nth-child(n) .slide__bg img{object-position:50% 30%;filter:none}}
