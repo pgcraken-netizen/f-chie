@@ -10,3 +10,8 @@
 | `/api/contact.js` | お問い合わせフォーム送信（Resend） |
 
 旧URL（/4-1/ や /1〜/5）は vercel.json でトップへリダイレクトしています。
+
+## Firebase Hosting（プロジェクト f-chie）
+- `firebase.json` / `.firebaserc` に設定。`main` に push すると GitHub Actions（firebase-hosting.yml）で公開します。
+- GitHub の Secrets に `FIREBASE_SERVICE_ACCOUNT` が登録されるまでは、公開ステップはスキップされます。
+- お問い合わせフォームの送信API（api/）は Vercel 専用のため、Firebase 版では送れず、フォームはメール・電話での案内に切り替わります。

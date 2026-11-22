@@ -1,0 +1,136 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "vercel.json",
+      "README.md",
+      "**/.*",
+      "**/node_modules/**",
+      "api/**",
+      "tools/**",
+      ".github/**"
+    ],
+    "cleanUrls": false,
+    "headers": [
+      {
+        "source": "/images/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=600, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/{css,js}/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/2/images/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=600, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/2/{css,js}/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/2/pdf/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=86400"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/kenkyu/**",
+        "destination": "https://www.f-chie.jp/%E3%81%A1%E3%81%88%E3%81%AE%E8%BC%AA-%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A/",
+        "type": 302
+      },
+      {
+        "source": "/4-1/kenkyu/**",
+        "destination": "https://www.f-chie.jp/%E3%81%A1%E3%81%88%E3%81%AE%E8%BC%AA-%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A/",
+        "type": 302
+      },
+      {
+        "source": "/4-1",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/4-1/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/2",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/2/index.html",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/1",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/1/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/3",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/3/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/4",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/4/**",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/5",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/5/**",
+        "destination": "/",
+        "type": 301
+      }
+    ]
+  }
+}

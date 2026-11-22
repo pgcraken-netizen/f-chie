@@ -1,0 +1,25 @@
+name: firebase-hosting
+# main に push すると Firebase Hosting に公開します。
+# 事前に GitHub のリポジトリ設定 → Secrets and variables → Actions に
+# FIREBASE_SERVICE_ACCOUNT（Firebase のサービスアカウント鍵 JSON）を登録してください。
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['tools/**', '.github/workflows/run-job.yml', '.github/workflows/fetch-assets.yml']
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check secret
+        id: chk
+        run: |
+          if [ -z "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" ]; then echo "ok=false" >> $GITHUB_OUTPUT; echo "FIREBASE_SERVICE_ACCOUNT が未登録のためスキップ"; else echo "ok=true" >> $GITHUB_OUTPUT; fi
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        if: steps.chk.outputs.ok == 'true'
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: f-chie
+          channelId: live
