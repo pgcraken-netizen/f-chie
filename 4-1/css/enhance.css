@@ -275,3 +275,26 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
 /* 議会での質問写真：本人が見えるよう右寄せ */
 .tk__ph img.tk__img--speech{object-position:62% 30%}
 @media (max-width:767px){.tk__ph img.tk__img--speech{object-position:68% 20%}}
+
+/* 地域支え合い研究会（別ページへの入口） */
+.kenkyu .kk__card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(20px,3.5vw,48px);align-items:center;background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(16px,2.4vw,28px);box-shadow:0 10px 30px rgba(167,25,91,.06)}
+.kk__ph{border-radius:16px;overflow:hidden}
+.kk__ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.kk__lead{font-size:15px;line-height:2}
+.kk__latest{margin-top:18px;background:var(--blush);border-radius:14px;padding:14px 18px}
+.kk__latest-h{font-size:13px;font-weight:700;color:var(--rose);display:flex;align-items:center;gap:8px}
+.kk__latest-h span{background:var(--rose);color:#fff;border-radius:999px;padding:0 10px;font-size:12px}
+.kk__latest-t{font-family:var(--maru);font-weight:700;font-size:16px;line-height:1.6;margin-top:4px}
+.kk__latest-t small{font-size:13px;font-weight:500;color:var(--gray)}
+.kk__btn{margin-top:20px;display:inline-flex;align-items:center;gap:8px}
+.kk__btn .ext{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.kk__note{font-size:12px;color:var(--gray);margin-top:10px}
+@media (max-width:767px){.kenkyu .kk__card{grid-template-columns:1fr}.kk__btn{width:100%;justify-content:center}}
+.kenkyu .kk__card{max-width:calc(var(--w) - 2 * var(--gut));margin:0 auto;width:calc(100% - 2 * var(--gut))}
+@media (max-width:767px){.kenkyu .kk__card{width:calc(100% - 32px)}}
+/* メニュー項目が増えたので折り返さないように */
+.gnav a{white-space:nowrap}
+@media (min-width:1024px) and (max-width:1279px){.gnav ul{gap:12px}.gnav a{font-size:12px;letter-spacing:.02em}.hd .logo__role{display:none}}
+.hd .logo__ja,.hd .btn-contact{white-space:nowrap}
+@media (min-width:1024px) and (max-width:1279px){.hd .logo__ja{font-size:24px}.hd .btn-contact{padding:10px 16px;font-size:12px;gap:6px}.gnav{margin-right:14px}}
+@media (min-width:1024px) and (max-width:1099px){.gnav ul{gap:10px}.gnav a{font-size:11.5px;letter-spacing:0}}
