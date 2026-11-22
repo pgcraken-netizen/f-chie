@@ -1,20 +1,92 @@
 {
   "trailingSlash": true,
   "headers": [
-    { "source": "/images/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=600, must-revalidate" }] },
-    { "source": "/kenkyu/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] },
-    { "source": "/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
-    { "source": "/2/images/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=600, must-revalidate" }] },
-    { "source": "/2/(css|js)/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] },
-    { "source": "/2/pdf/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(css|js)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/2/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/2/(css|js)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/2/pdf/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
   ],
   "redirects": [
-    { "source": "/4-1", "destination": "/", "permanent": true },
-    { "source": "/4-1/kenkyu/:path*", "destination": "/kenkyu/:path*", "permanent": true },
-    { "source": "/4-1/:path*", "destination": "/:path*", "permanent": true },
-    { "source": "/2", "destination": "/", "permanent": true },
-    { "source": "/2/index.html", "destination": "/", "permanent": true },
-    { "source": "/(1|3|4|5)/:path*", "destination": "/", "permanent": true },
-    { "source": "/(1|3|4|5)", "destination": "/", "permanent": true }
+    {
+      "source": "/kenkyu/:path*",
+      "destination": "https://www.f-chie.jp/%E3%81%A1%E3%81%88%E3%81%AE%E8%BC%AA-%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A/",
+      "permanent": false
+    },
+    {
+      "source": "/4-1/kenkyu/:path*",
+      "destination": "https://www.f-chie.jp/%E3%81%A1%E3%81%88%E3%81%AE%E8%BC%AA-%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A/",
+      "permanent": false
+    },
+    {
+      "source": "/4-1",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/4-1/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/2/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(1|3|4|5)/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(1|3|4|5)",
+      "destination": "/",
+      "permanent": true
+    }
   ]
 }
