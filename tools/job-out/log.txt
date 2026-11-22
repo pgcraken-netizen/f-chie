@@ -1,0 +1,66 @@
+== f-chie.jp NS
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; no servers could be reached
+== f-chie.jp SOA
+;; communications error to 127.0.0.53#53: timed out
+== f-chie.jp A
+;; communications error to 127.0.0.53#53: timed out
+== f-chie.jp AAAA
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; no servers could be reached
+== f-chie.jp CNAME
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; no servers could be reached
+== f-chie.jp MX
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+== f-chie.jp TXT
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+== www.f-chie.jp
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; no servers could be reached
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+== mail.f-chie.jp
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; no servers could be reached
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; communications error to 127.0.0.53#53: timed out
+;; no servers could be reached
+== whois
+[ JPRS database provides information on network administration. Its use is    ]
+[ restricted to network administration purposes. For further information,     ]
+[ use 'whois -h whois.jprs.jp help'. To suppress Japanese output, add'/e'     ]
+[ at the end of command, e.g. 'whois -h whois.jprs.jp xxx/e'.                 ]
+Domain Information:
+[Domain Name]                   F-CHIE.JP
+
+[Registrant]                    fukudachie
+
+[Name Server]                   ns1.jimdo.com
+[Name Server]                   ns2.jimdo.com
+[Signing Key]                   
+
+[Created on]                    2006/04/26
+[Expires on]                    2027/04/30
+[Status]                        Active
+[Last Updated]                  2026/05/01 01:05:04 (JST)
+
+Contact Information:
+[Name]                          Contact Service
+[Web Page]                       
+                                https://ssl.humeia.co.jp/domain/Contact.cgi
+
+== http
