@@ -1,6 +1,6 @@
 == f-chie.jp NS
-hera.ns.cloudflare.com.
 milan.ns.cloudflare.com.
+hera.ns.cloudflare.com.
 == f-chie.jp A
 199.36.158.100
 == f-chie.jp TXT
@@ -18,7 +18,7 @@ issuer=C=US, O=Google Trust Services, CN=WR3
 notBefore=Oct 27 22:54:14 2026 GMT
 notAfter=Jan 25 22:54:13 2027 GMT
 == cert apex
-subject=CN=firebaseapp.com
+subject=CN=f-chie.jp
 issuer=C=US, O=Google Trust Services, CN=WR3
-notBefore=Oct 27 22:54:14 2026 GMT
-notAfter=Jan 25 22:54:13 2027 GMT
+notBefore=Nov 23 09:48:09 2026 GMT
+notAfter=Feb 21 08:39:50 2027 GMT
