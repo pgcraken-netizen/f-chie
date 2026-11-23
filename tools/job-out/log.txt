@@ -1,66 +1,71 @@
+##### server 8.8.8.8
 == f-chie.jp NS
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; no servers could be reached
+ns14.jimdo.com.
+ns13.jimdo.com.
 == f-chie.jp SOA
-;; communications error to 127.0.0.53#53: timed out
+dns1.p01.nsone.net. hostmaster.jimdo.com. 1738180813 43200 7200 1209600 3600
 == f-chie.jp A
-;; communications error to 127.0.0.53#53: timed out
+162.159.128.70
+162.159.129.70
 == f-chie.jp AAAA
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; no servers could be reached
-== f-chie.jp CNAME
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; no servers could be reached
 == f-chie.jp MX
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
+20 mx2.jimdo.com.
+10 mx1.jimdo.com.
 == f-chie.jp TXT
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
+"v=spf1 include:sendgrid.net include:emailsrvr.com ~all"
+== f-chie.jp CAA
 == www.f-chie.jp
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; no servers could be reached
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
+web.jimdo.com.
+web.jimdo.com.
+162.159.128.70
+162.159.129.70
+web.jimdo.com.
+web.jimdo.com.
 == mail.f-chie.jp
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; no servers could be reached
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; communications error to 127.0.0.53#53: timed out
-;; no servers could be reached
-== whois
-[ JPRS database provides information on network administration. Its use is    ]
-[ restricted to network administration purposes. For further information,     ]
-[ use 'whois -h whois.jprs.jp help'. To suppress Japanese output, add'/e'     ]
-[ at the end of command, e.g. 'whois -h whois.jprs.jp xxx/e'.                 ]
-Domain Information:
-[Domain Name]                   F-CHIE.JP
-
-[Registrant]                    fukudachie
-
-[Name Server]                   ns1.jimdo.com
-[Name Server]                   ns2.jimdo.com
-[Signing Key]                   
-
-[Created on]                    2006/04/26
-[Expires on]                    2027/04/30
-[Status]                        Active
-[Last Updated]                  2026/05/01 01:05:04 (JST)
-
-Contact Information:
-[Name]                          Contact Service
-[Web Page]                       
-                                https://ssl.humeia.co.jp/domain/Contact.cgi
-
-== http
+== smtp.f-chie.jp
+== imap.f-chie.jp
+== pop.f-chie.jp
+== autodiscover.f-chie.jp
+autodiscover.emailsrvr.com.
+autodiscover.emailsrvr.com.
+161.47.143.37
+autodiscover.emailsrvr.com.
+autodiscover.emailsrvr.com.
+== _dmarc.f-chie.jp
+"RFC8482" ""
+"v=DMARC1; p=none;"
+== default._domainkey.f-chie.jp
+##### server ns1.jimdo.com
+== f-chie.jp NS
+ns13.jimdo.com.
+ns14.jimdo.com.
+== f-chie.jp SOA
+dns1.p01.nsone.net. hostmaster.jimdo.com. 1738180813 43200 7200 1209600 3600
+== f-chie.jp A
+162.159.129.70
+162.159.128.70
+== f-chie.jp AAAA
+== f-chie.jp MX
+10 mx1.jimdo.com.
+20 mx2.jimdo.com.
+== f-chie.jp TXT
+"v=spf1 include:sendgrid.net include:emailsrvr.com ~all"
+== f-chie.jp CAA
+== www.f-chie.jp
+web.jimdo.com.
+web.jimdo.com.
+web.jimdo.com.
+web.jimdo.com.
+== mail.f-chie.jp
+== smtp.f-chie.jp
+== imap.f-chie.jp
+== pop.f-chie.jp
+== autodiscover.f-chie.jp
+autodiscover.emailsrvr.com.
+autodiscover.emailsrvr.com.
+autodiscover.emailsrvr.com.
+autodiscover.emailsrvr.com.
+== _dmarc.f-chie.jp
+"RFC8482" ""
+"v=DMARC1; p=none;"
+== default._domainkey.f-chie.jp
