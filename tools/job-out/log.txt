@@ -1,71 +1,24 @@
-##### server 8.8.8.8
 == f-chie.jp NS
-ns14.jimdo.com.
-ns13.jimdo.com.
-== f-chie.jp SOA
-dns1.p01.nsone.net. hostmaster.jimdo.com. 1738180813 43200 7200 1209600 3600
+milan.ns.cloudflare.com.
+hera.ns.cloudflare.com.
 == f-chie.jp A
-162.159.128.70
-162.159.129.70
-== f-chie.jp AAAA
-== f-chie.jp MX
-20 mx2.jimdo.com.
-10 mx1.jimdo.com.
+199.36.158.100
 == f-chie.jp TXT
-"v=spf1 include:sendgrid.net include:emailsrvr.com ~all"
-== f-chie.jp CAA
-== www.f-chie.jp
-web.jimdo.com.
-web.jimdo.com.
-162.159.128.70
-162.159.129.70
-web.jimdo.com.
-web.jimdo.com.
-== mail.f-chie.jp
-== smtp.f-chie.jp
-== imap.f-chie.jp
-== pop.f-chie.jp
-== autodiscover.f-chie.jp
-autodiscover.emailsrvr.com.
-autodiscover.emailsrvr.com.
-161.47.143.37
-autodiscover.emailsrvr.com.
-autodiscover.emailsrvr.com.
-== _dmarc.f-chie.jp
-"RFC8482" ""
-"v=DMARC1; p=none;"
-== default._domainkey.f-chie.jp
-##### server ns1.jimdo.com
-== f-chie.jp NS
-ns13.jimdo.com.
-ns14.jimdo.com.
-== f-chie.jp SOA
-dns1.p01.nsone.net. hostmaster.jimdo.com. 1738180813 43200 7200 1209600 3600
-== f-chie.jp A
-162.159.129.70
-162.159.128.70
-== f-chie.jp AAAA
-== f-chie.jp MX
-10 mx1.jimdo.com.
-20 mx2.jimdo.com.
-== f-chie.jp TXT
-"v=spf1 include:sendgrid.net include:emailsrvr.com ~all"
-== f-chie.jp CAA
-== www.f-chie.jp
-web.jimdo.com.
-web.jimdo.com.
-web.jimdo.com.
-web.jimdo.com.
-== mail.f-chie.jp
-== smtp.f-chie.jp
-== imap.f-chie.jp
-== pop.f-chie.jp
-== autodiscover.f-chie.jp
-autodiscover.emailsrvr.com.
-autodiscover.emailsrvr.com.
-autodiscover.emailsrvr.com.
-autodiscover.emailsrvr.com.
-== _dmarc.f-chie.jp
-"RFC8482" ""
-"v=DMARC1; p=none;"
-== default._domainkey.f-chie.jp
+"hosting-site=f-chie"
+== www
+f-chie.web.app.
+199.36.158.100
+== https www
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.f-chie.jp'
+More details here: https://curl.se/docs/sslcerts.html
+
+== cert www
+subject=CN=firebaseapp.com
+issuer=C=US, O=Google Trust Services, CN=WR3
+notBefore=Oct 27 22:54:14 2026 GMT
+notAfter=Jan 25 22:54:13 2027 GMT
+== cert apex
+subject=CN=firebaseapp.com
+issuer=C=US, O=Google Trust Services, CN=WR3
+notBefore=Oct 27 22:54:14 2026 GMT
+notAfter=Jan 25 22:54:13 2027 GMT
