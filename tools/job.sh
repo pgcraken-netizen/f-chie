@@ -1,7 +1,7 @@
 #!/bin/bash
-# 実行したい処理をここに書いてpushすると、GitHub Actionsで実行し結果を tools/job-out に保存します
-# f-chie.jp のドメイン・DNS設定の確認（読み取りのみ）
-for t in NS SOA A AAAA CNAME MX TXT; do echo "== f-chie.jp $t"; dig +short f-chie.jp $t; done
-for h in www.f-chie.jp mail.f-chie.jp; do echo "== $h"; dig +short $h A; dig +short $h CNAME; done
-echo "== whois"; (sudo apt-get -qq install -y whois >/dev/null 2>&1; whois -h whois.jprs.jp "f-chie.jp/e" 2>&1 | grep -v -i -E "email|phone|fax|address|postal" | head -40)
-echo "== http"; curl -sI https://www.f-chie.jp | head -15
+# f-chie.jp の現在のDNSレコード確認（読み取りのみ・公開DNSに問い合わせ）
+for s in 8.8.8.8 ns1.jimdo.com; do
+  echo "##### server $s"
+  for t in NS SOA A AAAA MX TXT CAA; do echo "== f-chie.jp $t"; dig +short @$s f-chie.jp $t; done
+  for h in www mail smtp imap pop autodiscover _dmarc default._domainkey; do echo "== $h.f-chie.jp"; dig +short @$s $h.f-chie.jp ANY; dig +short @$s $h.f-chie.jp A; dig +short @$s $h.f-chie.jp CNAME; dig +short @$s $h.f-chie.jp TXT; done
+done
