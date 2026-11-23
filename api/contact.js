@@ -1,7 +1,7 @@
 // お問い合わせフォームの送信先（Vercel Serverless Function）
 // 必要な環境変数（Vercel のプロジェクト設定 → Environment Variables）
 //   RESEND_API_KEY : Resend（https://resend.com）の API キー
-//   CONTACT_TO     : 受信するメールアドレス（例：info@f-chie.jp）
+//   CONTACT_TO     : 受信するメールアドレス（例：fukudachie316@gmail.com）
 //   CONTACT_FROM   : 送信元（Resend で認証したドメインのアドレス。例：form@f-chie.jp）
 // 未設定のあいだは 503 を返し、フォーム側がメールソフト・電話での送信に切り替える。
 

@@ -58,14 +58,9 @@
   ],
   "redirects": [
     {
-      "source": "/kenkyu/:path*",
-      "destination": "https://www.f-chie.jp/%E3%81%A1%E3%81%88%E3%81%AE%E8%BC%AA-%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A/",
-      "permanent": false
-    },
-    {
       "source": "/4-1/kenkyu/:path*",
-      "destination": "https://www.f-chie.jp/%E3%81%A1%E3%81%88%E3%81%AE%E8%BC%AA-%E5%9C%B0%E5%9F%9F%E6%94%AF%E3%81%88%E5%90%88%E3%81%84%E7%A0%94%E7%A9%B6%E4%BC%9A/",
-      "permanent": false
+      "destination": "/kenkyu/:path*",
+      "permanent": true
     },
     {
       "source": "/4-1",

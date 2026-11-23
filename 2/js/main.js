@@ -47,7 +47,7 @@ document.querySelectorAll('.fold-btn button').forEach(function (b) {
     var body = '種別：' + d.kind + '\nお名前：' + d.name + (d.kana ? '（' + d.kana + '）' : '') +
       (d.email ? '\nメール：' + d.email : '') + (d.tel ? '\n電話：' + d.tel : '') + (d.address ? '\nご住所：' + d.address : '') +
       '\n\n' + d.message;
-    return 'mailto:info@f-chie.jp?subject=' + encodeURIComponent('【HPお問い合わせ】' + d.kind + '／' + d.name + ' 様') + '&body=' + encodeURIComponent(body);
+    return 'mailto:fukudachie316@gmail.com?subject=' + encodeURIComponent('【HPお問い合わせ】' + d.kind + '／' + d.name + ' 様') + '&body=' + encodeURIComponent(body);
   }
   f.addEventListener('submit', function (e) {
     e.preventDefault();
