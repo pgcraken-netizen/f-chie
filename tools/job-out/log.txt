@@ -5,20 +5,35 @@ hera.ns.cloudflare.com.
 199.36.158.100
 == f-chie.jp TXT
 "hosting-site=f-chie"
+== f-chie.jp CAA
 == www
 f-chie.web.app.
 199.36.158.100
-== https www
-curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.f-chie.jp'
-More details here: https://curl.se/docs/sslcerts.html
-
-== cert www
-subject=CN=firebaseapp.com
-issuer=C=US, O=Google Trust Services, CN=WR3
-notBefore=Oct 27 22:54:14 2026 GMT
-notAfter=Jan 25 22:54:13 2027 GMT
-== cert apex
+f-chie.web.app.
+== cert f-chie.jp
 subject=CN=f-chie.jp
-issuer=C=US, O=Google Trust Services, CN=WR3
 notBefore=Nov 23 09:48:09 2026 GMT
 notAfter=Feb 21 08:39:50 2027 GMT
+== http f-chie.jp
+HTTP/2 301 
+location: https://www.f-chie.jp/
+content-type: text/plain; charset=utf-8
+accept-ranges: bytes
+date: Mon, 23 Nov 2026 22:04:44 GMT
+x-served-by: cache-dfw-kdfw8210103-DFW
+x-cache: MISS
+x-cache-hits: 0
+== cert www.f-chie.jp
+subject=CN=www.f-chie.jp
+notBefore=Nov 23 15:23:12 2026 GMT
+notAfter=Feb 21 08:39:12 2027 GMT
+== http www.f-chie.jp
+HTTP/2 200 
+cache-control: max-age=3600
+content-type: text/html; charset=utf-8
+etag: "568bc3f7b2234b147924efc71caba862153f50c78a5907bf275d1269d5c26b32"
+last-modified: Mon, 23 Nov 2026 08:57:20 GMT
+strict-transport-security: max-age=31556926
+accept-ranges: bytes
+date: Mon, 23 Nov 2026 22:04:45 GMT
+<title>福田ちえ｜宇都宮市議会議員 — 暮らしの声を、まちを変える力に。
