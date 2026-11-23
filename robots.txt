@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://f-chie.web.app/sitemap.xml
+Sitemap: https://www.f-chie.jp/sitemap.xml
