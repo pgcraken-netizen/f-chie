@@ -4,7 +4,7 @@
 .loader{display:none}
 html.is-loading .loader{display:block;position:fixed;inset:0;z-index:1000;overflow:hidden;
   background:linear-gradient(180deg,#EF0A78 0%,#EE0A79 40%,#F21A82 70%,#F61E85 100%);
-  animation:ldIn .35s ease both, ldFailsafe .6s cubic-bezier(.7,0,.3,1) 5.5s forwards}
+  animation:ldIn .35s ease both, ldFailsafe .6s cubic-bezier(.7,0,.3,1) 12s forwards}
 html.is-loading .hd,html.is-loading main,html.is-loading .ft{opacity:0}
 html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transition:opacity .9s ease .35s}
 .loader.is-out{transform:translateX(-100%);transition:transform .65s cubic-bezier(.7,0,.3,1)}

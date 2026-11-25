@@ -48,15 +48,19 @@
     setTimeout(() => { html.classList.remove('is-loading', 'is-leaving'); }, 1300);
   };
   if (html.classList.contains('is-loading')) {
-    // 画像の表示 → 名前の打ち出しが終わる → 少し見せてから退場
-    let loaded = d.readyState === 'complete', typed = false;
-    const go = () => { if (loaded && typed) setTimeout(hideLoader, 500); };
+    // 画像が表示されてから名前の打ち出しが終わるまで必ず見せる（通信が遅いスマホでも途中で切らない）
+    let done = false;
+    const finish = (wait) => { if (done) return; done = true; setTimeout(hideLoader, wait); };
     const nameCover = d.querySelector('.loader__cover--name');
-    if (nameCover) nameCover.addEventListener('animationend', () => { typed = true; go(); }, { once: true });
-    else typed = true;
-    if (!loaded) addEventListener('load', () => { loaded = true; go(); }, { once: true });
-    go();
-    setTimeout(hideLoader, 4500);          // 読み込みが遅くても待たせすぎない
+    if (nameCover) nameCover.addEventListener('animationend', () => finish(700), { once: true });
+    else finish(600);
+    // 画像の表示（is-ready）から一定時間たっても終わらなければ閉じる
+    const watchReady = () => {
+      if (loader && loader.classList.contains('is-ready')) setTimeout(() => finish(0), 3200);
+      else if (!done) setTimeout(watchReady, 150);
+    };
+    watchReady();
+    setTimeout(() => finish(0), 11000);   // 画像がどうしても読めない場合の最終手段
     loader && loader.addEventListener('click', hideLoader);
   }
 
