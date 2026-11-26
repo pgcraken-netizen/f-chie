@@ -17,13 +17,14 @@ def text(h):
     return '\n'.join(l.strip() for l in t.split('\n') if l.strip())
 idx=get(BASE+'/gikai/kaigi/tsukoku/index.html')
 links=[]
-for m in re.finditer(r'href="(/gikai/kaigi/tsukoku/[0-9/]+(?:index)?\.html)"[^>]*>([^<]+)<',idx):
-    u,n=m.group(1),m.group(2).strip()
+open('tools/job-out/idx_sample.txt','w').write(idx[:200]+'\n...\n'+'\n'.join(re.findall(r'<a [^>]*href="[^"]*tsukoku[^"]*"[^>]*>.*?</a>',idx,re.S)[:8]))
+for m in re.finditer(r'href="(?:https://www\.city\.utsunomiya\.lg\.jp)?(/gikai/kaigi/tsukoku/[0-9/]+(?:index)?\.html)"[^>]*>(.*?)</a>',idx,re.S):
+    u,n=m.group(1),re.sub(r'<[^>]+>','',m.group(2)).strip()
     if ('定例会' in n or '臨時会' in n) and (u,n) not in links: links.append((u,n))
 out=[]
 for u,n in links:
     pages=[u]; h=get(BASE+u)
-    sub=sorted(set(re.findall(r'href="(/gikai/kaigi/tsukoku/\d+/\d+\.html)"',h)))
+    sub=sorted(set(re.findall(r'href="(?:https://www\.city\.utsunomiya\.lg\.jp)?(/gikai/kaigi/tsukoku/\d+/\d+\.html)"',h)))
     pages+= [s for s in sub if s!=u]
     for pg in pages:
         hh=h if pg==u else get(BASE+pg)
