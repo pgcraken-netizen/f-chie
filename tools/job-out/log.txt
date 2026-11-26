@@ -1,1 +1,29 @@
-sessions 0 hits 0
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1032995.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1032995.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1033442.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1033442.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1034136.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1034136.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1036078.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1036078.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1036748.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1036748.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1039540.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1039540.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1040280.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1040280.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1041102.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1041102.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1041515.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1041515.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1043752.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1043752.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1044478.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1044478.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1047887.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1047887.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1048793.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1048793.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1050139.html HTTP Error 404: Not Found
+fail https://www.city.utsunomiya.lg.jp/gikai/kaigi/tsukoku/1050139.html HTTP Error 404: Not Found
+sessions 54 hits 14
