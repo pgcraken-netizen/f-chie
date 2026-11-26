@@ -1,6 +1,1 @@
-== TXT
-"google-site-verification=XPOT8lieG_cFu8A4e1mlmz_Ucve6noxIsl83KxsqQTI"
-"hosting-site=f-chie"
-"v=spf1 -all"
-== _dmarc
-"v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s"
+sessions 0 hits 0
