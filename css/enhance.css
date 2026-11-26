@@ -11,12 +11,11 @@ html.is-leaving .hd,html.is-leaving main,html.is-leaving .ft{opacity:1;transitio
 @keyframes ldIn{from{opacity:0}to{opacity:1}}
 @keyframes ldFailsafe{to{transform:translateX(-100%)}}
 .loader:not(.is-ready) .loader__stage{opacity:0}
-.loader:not(.is-ready) .loader__cover{animation-play-state:paused}
 .loader__stage{transition:opacity .3s ease;position:absolute;left:50%;top:50%;width:min(100vw,calc(100vh * 941 / 1672));aspect-ratio:941/1672;transform:translate(-50%,-50%)}
 .loader__still{position:absolute;inset:0;width:100%;height:100%;display:block}
 .loader__cover{position:absolute;background:#fff;transform-origin:right center}
-.loader__cover--kana{left:62.2%;top:42.6%;width:34.8%;height:3.9%;animation:ldType .45s steps(6,end) .45s forwards}
-.loader__cover--name{left:32.6%;top:48.4%;width:64.4%;height:8.9%;animation:ldType .6s steps(5,end) .95s forwards}
+.loader__cover--kana{left:62.2%;top:42.6%;width:34.8%;height:3.9%}
+.loader__cover--name{left:32.6%;top:48.4%;width:64.4%;height:8.9%}
 @keyframes ldType{to{transform:scaleX(0)}}
 @media (min-width:768px){
   .loader::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-4deg,transparent 0 120px,rgba(255,255,255,.07) 120px 122px,transparent 122px 260px)}

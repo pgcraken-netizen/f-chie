@@ -48,19 +48,33 @@
     setTimeout(() => { html.classList.remove('is-loading', 'is-leaving'); }, 1300);
   };
   if (html.classList.contains('is-loading')) {
-    // 画像が表示されてから名前の打ち出しが終わるまで必ず見せる（通信が遅いスマホでも途中で切らない）
-    let done = false;
-    const finish = (wait) => { if (done) return; done = true; setTimeout(hideLoader, wait); };
-    const nameCover = d.querySelector('.loader__cover--name');
-    if (nameCover) nameCover.addEventListener('animationend', () => finish(700), { once: true });
-    else finish(600);
-    // 画像の表示（is-ready）から一定時間たっても終わらなければ閉じる
-    const watchReady = () => {
-      if (loader && loader.classList.contains('is-ready')) setTimeout(() => finish(0), 3200);
-      else if (!done) setTimeout(watchReady, 150);
+    // 名前の打ち出しはJSで1文字ずつ進める（iPhoneでCSSアニメが最後の1文字で止まる対策）
+    const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+    const reveal = (el, steps, dur) => new Promise((res) => {
+      if (!el) return res();
+      let i = 0;
+      const t = setInterval(() => {
+        i += 1;
+        el.style.transform = 'scaleX(' + Math.max(0, 1 - i / steps) + ')';
+        if (i >= steps) { clearInterval(t); el.style.visibility = 'hidden'; res(); }
+      }, dur / steps);
+    });
+    let started = false;
+    const run = async () => {
+      if (started) return; started = true;
+      await wait(450);
+      await reveal(d.querySelector('.loader__cover--kana'), 6, 450);
+      await wait(80);
+      await reveal(d.querySelector('.loader__cover--name'), 5, 650);
+      await wait(1000);              // 名前がそろった状態を少し見せてから退場
+      hideLoader();
     };
-    watchReady();
-    setTimeout(() => finish(0), 11000);   // 画像がどうしても読めない場合の最終手段
+    const whenReady = () => {
+      if (!loader || loader.classList.contains('is-ready')) run();
+      else setTimeout(whenReady, 100);
+    };
+    whenReady();
+    setTimeout(hideLoader, 12000);   // 画像がどうしても読めない場合の最終手段
     loader && loader.addEventListener('click', hideLoader);
   }
 
